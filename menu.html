@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="menu">
+  
+  
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Главная</title>
+      <link rel="stylesheet" href="/css/style.css">
+  
+  
+      
+      <div class="border-b border-gray-500 bg-gray-900 text-white flex justify-between items-center px-4 py-3">
+          
+              <button class="ml-[-10px] inline-flex items-center gap-x-1 text-sm font-semibold leading-6 rounded-full bg-gray-900 hover:bg-gray-600 px-3 py-2" aria-expanded="false" id="menu-button">
+                  <svg style="color: rgb(241, 245, 249);" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 4.44772 3.44772 4 4 4H16C16.5523 4 17 4.44772 17 5C17 5.55228 16.5523 6 16 6H4C3.44772 6 3 5.55228 3 5Z" fill="#f1f5f9"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 10C3 9.44772 3.44772 9 4 9H16C16.5523 9 17 9.44772 17 10C17 10.5523 16.5523 11 16 11H4C3.44772 11 3 10.5523 3 10Z" fill="#f1f5f9"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 15C3 14.4477 3.44772 14 4 14H10C10.5523 14 11 14.4477 11 15C11 15.5523 10.5523 16 10 16H4C3.44772 16 3 15.5523 3 15Z" fill="#f1f5f9"></path> </svg>
+                  </button>
+  
+          <div class="flex items-center">
+              <p class="mr-4 text-slate-100 text-sm">Добро пожаловать, Алексей Дмитриевич</p>
+              <button class="mr-[-8px] text-slate-100 rounded-full bg-gray-900 hover:bg-gray-700 px-3 py-2" id="settings">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 48 48" stroke="currentColor"><path d="m36.7 27.0029-1.19-.6884a11.271 11.271 0 0 0 0-4.629l1.19-.6884a2.273 2.273 0 0 0 .8232-3.0733l-1.5-2.5976a2.2709 2.2709 0 0 0 -3.0732-.8233l-1.1875.6856a11.7927 11.7927 0 0 0 -4.0125-2.3164v-1.2627a2.2819 2.2819 0 0 0 -2.25-2.3594h-3a2.2531 2.2531 0 0 0 -2.25 2.25v1.3721a11.7927 11.7927 0 0 0 -4.0127 2.3164l-1.0928-.6309a2.3129 2.3129 0 0 0 -3.1679.7686l-1.5 2.5976a2.2757 2.2757 0 0 0 .8234 3.0733l1.19.6884a11.271 11.271 0 0 0 0 4.629l-1.19.6884a2.2693 2.2693 0 0 0 -.8232 3.0733l1.5 2.5976a2.2719 2.2719 0 0 0 3.0732.8233l1.1875-.6856a11.7927 11.7927 0 0 0 4.0125 2.3164v1.2627a2.2819 2.2819 0 0 0 2.25 2.3594h3a2.2531 2.2531 0 0 0 2.25-2.25v-1.3721a11.7927 11.7927 0 0 0 4.0127-2.3164l1.0928.6309a2.3243 2.3243 0 0 0 3.1679-.7686l1.5-2.5976a2.3044 2.3044 0 0 0 -.8234-3.0733zm-12.7 4.7471a7.75 7.75 0 1 1 7.75-7.75 7.7587 7.7587 0 0 1 -7.75 7.75z" fill="#000000" style="fill: rgb(241, 245, 249);"></path></svg>
+              </button>
+          </div>
+      </div>
+  
+       <div id="menu-flyout" class="border-r border-gray-500 fixed left-0 z-10 w-70 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+          <div class="h-full px-3 py-4 overflow-y-auto bg-gray-900">
+             <ul class="font-medium">
+                <li>
+                   <a href="#" class="flex items-center p-2 text-slate-100 rounded-lg bg-gray-900 hover:bg-gray-700">
+                      <span class="text-sm">Главная схема</span>
+                   </a>
+                </li>
+  
+                <li>
+                  <a type="button" class="inline-flex items-center gap-x-1 text-sm font-semibold p-2 text-slate-100 rounded-lg bg-gray-900 hover:bg-gray-600" aria-expanded="false" id="struct-button">
+                      <span class="whitespace-nowrap text-sm">Структурные подразделения</span>
+                      <svg class="h-5 w-5 text-slate-100" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                        </svg>
+                      </a>
+                </li>
+  
+                
+  <div class="absolute ml-44 z-20 hidden" id="struct-flyout">
+      <div class="max-w-[270px] overflow-hidden rounded-2xl bg-gray-800 text-sm shadow-xl ring-gray-900/5">
+        
+          <div class="bg-gray-800 text-slate-100 group relative flex gap-x-6 rounded-lg">
+              <div class="pr-2 pl-2 pt-2">
+              <a type="button" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 p-2 text-slate-100 rounded-lg bg-gray-800 hover:bg-gray-600" id="in_struct-button">
+                  <span class="whitespace-nowrap text-sm">Структурное подразделение 1</span>
+                  <svg class="ms-1 h-5 w-5 text-slate-100" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                  </svg>
+              </a>
+          </div>
+          </div>    
+  
+                  <div class="absolute ml-40 z-30 hidden" id="in_struct-flyout">
+                  <div class="w-screen max-w-[260px] overflow-hidden rounded-2xl bg-gray-700 text-sm shadow-lg ring-1 ring-gray-900/5">  
+                      
+                      <div class="p-2">
+                          <a href="#" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 p-2 text-slate-100 rounded-lg bg-gray-700 hover:bg-gray-600">
+                              Структурное подразделение 1 -<br>Показатели 1
+                          </a>
+                      </div>
+  
+                      <div class="p-2">
+                          <a href="#" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 p-2 text-slate-100 rounded-lg bg-gray-700 hover:bg-gray-600">
+                              Структурное подразделение 1 -<br>Показатели 2
+                          </a>
+                      </div>
+  
+                      <div class="p-2">
+                          <a href="#" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 p-2 text-slate-100 rounded-lg bg-gray-700 hover:bg-gray-600">
+                              Структурное подразделение 1 -<br>Показатели N
+                          </a>
+                      </div>
+  
+                  </div>
+              </div>
+  
+              
+  
+             <div class="p-2">
+                  <a href="#" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 p-2 text-slate-100 rounded-lg bg-gray-800 hover:bg-gray-600">
+                      Структурное подразделение 2
+                  </a>
+              </div>
+          
+     
+              <div class="p-2">
+                  <a href="#" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 p-2 text-slate-100 rounded-lg bg-gray-800 hover:bg-gray-600">
+                      Структурное подразделение N
+                  </a>
+              </div>
+          </div>
+      </div>          
+  
+                  
+                <li>
+                   <a href="#" class="flex items-center p-2 text-slate-100 rounded-lg bg-gray-900 hover:bg-gray-600">
+                      <span class="ms-1 whitespace-nowrap text-sm">Журналы</span>
+                      
+                  </a>
+                </li>
+                <li>
+                   <a href="#" class="flex items-center p-2 text-slate-100 rounded-lg bg-gray-900 hover:bg-gray-600">
+                      
+                      <span class="ms-1 whitespace-nowrap text-sm">ГИС</span>
+                      
+                  </a>
+                </li>
+                <li>
+                   <a href="#" class="flex items-center p-2 text-slate-100 rounded-lg bg-gray-900 hover:bg-gray-600">
+                      
+                      <span class="flex-1 ms-1 whitespace-nowrap text-sm">Сводки</span>
+                   </a>
+                </li>
+                <li>
+                   <a href="#" class="flex items-center p-2 text-slate-100 rounded-lg bg-gray-900 hover:bg-gray-600" id="spravki-button">
+                      
+                      <span class="ms-1 whitespace-nowrap text-sm">Справочная информация</span>
+                      
+                  </a>
+                </li>
+  
+              <div class="absolute ml-44 z-20 hidden" id="spravki-flyout">
+                  <div class="max-w-[270px] overflow-hidden rounded-2xl bg-gray-800 text-sm shadow-lg ring-1 ring-gray-900/5"> 
+                      
+                      <div class="p-2">
+                          <a href="#" class="min-w-28 inline-flex items-center gap-x-1 text-sm font-semibold leading-6 p-2 text-slate-100 rounded-lg bg-gray-800 hover:bg-gray-600">
+                              Справки
+                          </a>
+                      </div>
+                  </div>
+              </div>
+  
+             </ul>
+  
+          </div>
+      </div>
+  
+      <div id="settingsMenu" class="absolute bottom-0 right-0 hidden">
+  
+          <div class="container mx-auto p-1 min-w-56">
+              <div class=" text-slate-100 bg-gray-900 shadow-md rounded-md p-4 ">
+  
+                  <div class="text-center font-bold mb-4 ">
+                      Журнал
+                  </div>
+  
+                  <hr class="border-gray-300">
+                  <div class="mt-4 text-sm text-center">
+                      <p>Сообщения журнала</p>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="container mx-auto p-1 min-w-56">
+              <div class=" text-slate-100 bg-gray-900 shadow-md rounded-md p-4 ">
+  
+                  <div class="text-center font-bold mb-4 ">
+                      Масшабирование схемы
+                  </div>
+  
+                  <hr class="border-gray-300">
+                  <div class="mt-4 text-sm text-center">
+                      <button id="scaleButton" class="bg-white text-gray-800 font-bold py-2 px-4 rounded">Масшабирование</button>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="container mx-auto p-1 min-w-56">
+              <div class=" text-slate-100 bg-gray-900 shadow-md rounded-md p-4 ">
+  
+                  <div class="text-center font-bold mb-4 ">
+                      Мерцание
+                  </div>
+  
+                  <hr class="border-gray-300">
+                  <div class="mt-4 text-sm text-center">
+                      
+                          <button class="merc-button w-60 bg-white  text-gray-800 font-bold py-2 px-4 rounded">Включить все</button><br>
+                          <button class="merc-button w-60 mt-2 bg-white  text-gray-800 font-bold py-2 px-4 rounded">Только квитируемые</button><br>
+                          <button id="merc_Not" class="merc-button w-60 mt-2 bg-white  text-gray-800 font-bold py-2 px-4 rounded">Выключить все</button>
+                     
+                  </div>
+              </div>
+          </div>
+  
+          <div class="container mx-auto p-1 min-w-56">
+              <div class=" text-slate-100 bg-gray-900 shadow-md rounded-md p-4 ">
+  
+                  <div class="text-center font-bold mb-4 ">
+                      Квитирование
+                  </div>
+  
+                  <hr class="border-gray-300">
+                  <div class="mt-4 text-sm text-center">
+                      
+                          <button class="kvit-button w-60 bg-white hover:bg-green-500 text-gray-800 font-bold py-2 px-4 rounded">Квитировать все</button><br>
+                          <button class="kvit-button w-60 mt-2 bg-white hover:bg-green-500 text-gray-800 font-bold py-2 px-4 rounded">Очистить кэш системы</button><br>
+                     
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  
+      <script>
+          const merc_buttons = document.querySelectorAll('.merc-button'); // Получаем все кнопки
+      
+          const defaultButton = document.getElementById('merc_Not');
+          if (defaultButton) { 
+          defaultButton.classList.add('bg-green-500', 'text-white');
+          defaultButton.classList.remove('bg-white');
+          }
+  
+  
+          merc_buttons.forEach(button => {
+          button.addEventListener('click', () => {
+      // Удаляем классы у всех кнопок
+      merc_buttons.forEach(b => {
+        b.classList.remove('bg-green-500', 'text-white');
+        b.classList.add('bg-white'); 
+      });
+  
+      // Добавляем классы к текущей кнопке
+      button.classList.remove('bg-white');
+      button.classList.add('bg-green-500', 'text-white');
+    });
+  });
+      
+          const inStructButton = document.getElementById("in_struct-button");
+          const inStructFlyout = document.getElementById("in_struct-flyout");
+          
+          const structButton = document.getElementById('struct-button');
+          const structFlyout = document.getElementById('struct-flyout');
+          
+          const menuButton = document.getElementById('menu-button');
+          const menuFlyout = document.getElementById('menu-flyout');
+          
+          const spravkiButton = document.getElementById('spravki-button');
+          const spravkiFlyout = document.getElementById('spravki-flyout');
+          
+          const scaleButton = document.getElementById('scaleButton');
+      
+          const settings = document.getElementById('settings');
+          const settingsMenu = document.getElementById('settingsMenu');
+          
+          scaleButton.addEventListener('click', () => {
+             scaleButton.classList.toggle('bg-white');
+             scaleButton.classList.toggle('bg-green-500');
+             scaleButton.classList.toggle('text-white');
+         });
+  
+          // Функция для скрытия меню inStruct
+          const hideInStruct = () => {
+            inStructFlyout.classList.add("hidden");
+          };
+          
+          // Обработчик клика на кнопку меню
+          menuButton.addEventListener('click', () => {
+            menuFlyout.classList.toggle('hidden');
+            structFlyout.classList.add("hidden");
+            // Скрыть меню inStruct, если оно открыто
+            if (inStructFlyout.classList.contains("hidden") === false) {
+              hideInStruct();
+            }
+          });
+      
+          // Обработчик клика на кнопку меню настроек
+          settings.addEventListener('click', () => {
+        settingsMenu.classList.toggle('hidden');
+      });
+          
+          spravkiButton.addEventListener("mouseout", () => {
+            // Не закрываем меню при выходе из зоны кнопки
+            if (!spravkiFlyout.contains(event.relatedTarget)) { // Проверяем, не находится ли курсор внутри inStructFlyout
+              spravkiFlyout.classList.add("hidden");
+            }
+          });
+          
+          // Обработчик наведения на кнопку inStruct
+          spravkiButton.addEventListener("mouseover", () => {
+              spravkiFlyout.classList.remove("hidden");
+          });
+          
+          // Обработчик наведения на меню instruct
+          spravkiFlyout.addEventListener("mouseover", () => {
+            // Не закрываем меню при наведении на него
+            spravkiFlyout.classList.remove("hidden"); 
+          });
+          
+          // Обработчик выхода из зоны меню instruct
+          spravkiFlyout.addEventListener("mouseout", () => {
+              spravkiFlyout.classList.add("hidden");
+          });
+          
+          inStructButton.addEventListener("mouseout", () => {
+            // Не закрываем меню при выходе из зоны кнопки
+            if (!inStructFlyout.contains(event.relatedTarget)) { // Проверяем, не находится ли курсор внутри inStructFlyout
+              inStructFlyout.classList.add("hidden");
+            }
+          });
+          
+          // Обработчик наведения на кнопку inStruct
+          inStructButton.addEventListener("mouseover", () => {
+            inStructFlyout.classList.remove("hidden");
+          });
+          
+          // Обработчик наведения на меню instruct
+          inStructFlyout.addEventListener("mouseover", () => {
+            // Не закрываем меню при наведении на него
+            inStructFlyout.classList.remove("hidden"); 
+          });
+          
+          // Обработчик выхода из зоны меню instruct
+          inStructFlyout.addEventListener("mouseout", () => {
+            inStructFlyout.classList.add("hidden");
+          });
+          
+          structButton.addEventListener("mouseout", () => {
+            // Не закрываем меню при выходе из зоны кнопки
+            if (!structFlyout.contains(event.relatedTarget)) { // Проверяем, не находится ли курсор внутри structFlyout
+              structFlyout.classList.add("hidden");
+            }
+          });
+          
+          // Обработчик наведения на кнопку struct
+          structButton.addEventListener("mouseover", () => {
+            structFlyout.classList.remove("hidden");
+            // Скрыть меню inStruct, если оно открыто
+            if (!inStructFlyout.classList.contains("hidden")) {
+              hideInStruct();
+            }
+          });
+          
+          // Обработчик наведения на меню struct
+          structFlyout.addEventListener("mouseover", () => {
+            // Не закрываем меню при наведении на него
+            structFlyout.classList.remove("hidden"); 
+          });
+          
+          // Обработчик выхода из зоны меню struct
+          structFlyout.addEventListener("mouseout", () => {
+            structFlyout.classList.add("hidden");
+          });
+                </script>
+  </div>
+  </body>
+  </html>
