@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="h-screen">
+  <div id="menu"></div>
+    <div class="mt-5 bg-gray-100 p-4 rounded-lg border border-gray-400 shadow-md focus:outline-none h-5/6 w-4/6 mx-auto">
+      <p class="text-center">Главная страница</p>
+    </div>
+
+  <script defer>
+    fetch('menu.html')
+               .then(response => response.text())
+               .then(html => {
+                   document.getElementById('menu').innerHTML = html;
+      
+      const inStructButton = document.getElementById("in_struct-button");
+      const inStructFlyout = document.getElementById("in_struct-flyout");
+      
+      const structButton = document.getElementById('struct-button');
+      const structFlyout = document.getElementById('struct-flyout');
+      
+      const menuButton = document.getElementById('menu-button');
+      const menuFlyout = document.getElementById('menu-flyout');
+      
+      const scaleButton = document.getElementById('scaleButton');
+  
+      const settings = document.getElementById('settings');
+      const settingsMenu = document.getElementById('settingsMenu');
+
+      const merc_buttons = document.querySelectorAll('.merc-button'); // Получаем все кнопки
+  
+      const defaultButton = document.getElementById('merc_Not');
+      if (defaultButton) { 
+      defaultButton.classList.add('bg-green-500', 'text-white');
+      defaultButton.classList.remove('bg-white');
+      }
+
+
+      merc_buttons.forEach(button => {
+      button.addEventListener('click', () => {
+  // Удаляем классы у всех кнопок
+  merc_buttons.forEach(b => {
+    b.classList.remove('bg-green-500', 'text-white');
+    b.classList.add('bg-white'); 
+  });
+
+  // Добавляем классы к текущей кнопке
+  button.classList.remove('bg-white');
+  button.classList.add('bg-green-500', 'text-white');
+});
+});
+      
+      scaleButton.addEventListener('click', () => {
+         scaleButton.classList.toggle('bg-white');
+         scaleButton.classList.toggle('bg-green-500');
+         scaleButton.classList.toggle('text-white');
+     });
+      
+      // Обработчик клика на кнопку меню
+      menuButton.addEventListener('click', () => {
+        menuFlyout.classList.toggle('hidden');
+        structFlyout.classList.add("hidden");
+        // Скрыть меню inStruct, если оно открыто
+        if (inStructFlyout.classList.contains("hidden") === false) {
+          hideInStruct();
+        }
+      });
+  
+      // Обработчик клика на кнопку меню настроек
+      settings.addEventListener('click', () => {
+    settingsMenu.classList.toggle('hidden');
+  });
+      
+function setupMenu(buttonId, flyoutId) {
+const button = document.getElementById(buttonId);
+const flyout = document.getElementById(flyoutId);
+
+button.addEventListener("mouseout", () => {
+if (!flyout.contains(event.relatedTarget)) {
+  flyout.classList.add("hidden");
+}
+});
+
+button.addEventListener("mouseover", () => {
+flyout.classList.remove("hidden");
+});
+
+flyout.addEventListener("mouseover", () => {
+flyout.classList.remove("hidden");
+});
+
+flyout.addEventListener("mouseout", () => {
+flyout.classList.add("hidden");
+});
+}
+
+setupMenu('in_struct-button', 'in_struct-flyout');
+setupMenu('struct-button', 'struct-flyout');
+});
+  </script>
+</body>
+</html>
